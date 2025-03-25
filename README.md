@@ -14,9 +14,8 @@ This project analyzes New York Times articles (2015-2023) to identify and extrac
    - Load NYT articles (2015-2023)
    - Clean text (lowercase, remove stopwords, lemmatize)
    - Classify articles as MIC-related using:
-     - Regex patterns
+     - Regex patterns (bad results)
      - Zero-shot classification (facebook/bart-large-mnli)
-     - LLaMA 2 model (optional)
 
 3. **Information Extraction**:
    - Extract dates of military deaths (NER + regex)
@@ -40,7 +39,7 @@ Python 3.8+ with packages listed in `requirements.txt`
 
   Final output (Final_data.csv) contains
 
-  1. Article metadata (year, filename)
+  1. Article metadata (year, filename, content of Articles)
 
   2. Extracted dates of military deaths
 
